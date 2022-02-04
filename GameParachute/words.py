@@ -1,8 +1,8 @@
 class Words:
     def word_list():
         pass
-    def rand_word():
+    def random_word():
         pass
-    def chop_word():
+    def update_word():
         pass
     
