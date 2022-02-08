@@ -26,7 +26,8 @@ class Parachute:
 
 ### Note! ###
 
-#   The "self.guess_wrong" above doesn't need to be that name. Whoever's responsible for counting answers can choose the name they want.
+# The "self.guess_wrong" above doesn't need to be that name. Whoever's responsible for counting answers can choose the name they want.
+# In this code, I'm assuming that every time the player guesses wrong, it adds 1 to a counter (In this case it's the "self.guess_wrong").
 
 
     
