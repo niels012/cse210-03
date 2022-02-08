@@ -31,4 +31,4 @@ root                    (project root folder)
 
 ## Authors
 ---
-* Michelle Farr, Bryce Hiroshi Williams, Nilo Urmeneta, Peter Otim, Agustin Aguilar.
+* Michelle Farr (mrecancun@hotmail.com), Bryce Hiroshi Williams, Nilo Urmeneta(urmenetanilo@gmail.com), Peter Otim, Agustin Aguilar.
