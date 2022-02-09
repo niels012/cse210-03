@@ -8,7 +8,7 @@ class Player:
 
     Attributes:
         user_guess= User's guess
-        index= Index of the User's guessed letter in the game's word.
+        indeces= List of indices of the User's guessed letter in the game's word.
         guess_wrong= Counter of user's wrong guesses.
         word (Words): The game's word.
     """
@@ -20,7 +20,7 @@ class Player:
             self (Player): an instance of Player.
         """
         self._user_guess=' '
-        self.index=0
+        self.indices=[]
         self.guess_wrong=0
         self.word=Words().word_picker()
         
@@ -55,7 +55,12 @@ class Player:
         """
         word=self.word
         guess=self._user_guess
-        self.index= indexOf(word,guess)
+        indices=[]
+        for i in range(len(word)):
+            if word[i] == guess:
+                indices.append(i)
+        self.indices= indices
+        print(self.indices)
         pass
     def wrong(self):
         """Adds 1 to the self.guess_wrog counter
@@ -68,4 +73,4 @@ class Player:
 
 
 #This last line was just to test the class. Erase when the program is finished
-# Player().compare_guess()
+Player().compare_guess()
