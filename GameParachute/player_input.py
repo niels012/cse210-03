@@ -47,7 +47,7 @@ class Player:
             self.wrong()
         pass
     def guess_right(self):
-        """Updates self.index with the word's index where the user's chosen letter
+        """Updates self.index with the word's indices where the user's chosen letter
             is in.
 
         Args:
