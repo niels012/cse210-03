@@ -56,7 +56,6 @@ class Player:
         word=self.word
         guess=self._user_guess
         self.index= indexOf(word,guess)
-        self.word[self.index]=self._user_guess
         pass
     def wrong(self):
         """Adds 1 to the self.guess_wrog counter
