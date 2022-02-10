@@ -1,4 +1,5 @@
 from operator import indexOf
+from game.words import Words
 
 class Player:
     """A person who plays the game.

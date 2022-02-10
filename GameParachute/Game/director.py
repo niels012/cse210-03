@@ -1,6 +1,6 @@
-from Game.construct_para import Parachute
-from Game.player_input import Player
-from Game.words import Words
+from game.construct_para import Parachute
+from game.player_input import Player
+from game.words import Words
 
 
 class Director:
