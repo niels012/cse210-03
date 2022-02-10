@@ -24,7 +24,7 @@ class Player:
         self.guess_wrong=0
         self.word=Words().word_picker()
         
-        pass
+    
     def get_input(self):
         """Gets user's input (a letter).
 
@@ -32,7 +32,7 @@ class Player:
             self (Player): an instance of Player.
         """
         self._user_guess=input("Guess the letter: ")
-        pass
+    
     def compare_guess(self):
         """Check if user's input (self._user_guess) is inside the word provided by 
             the Words class (self.word)
@@ -45,7 +45,7 @@ class Player:
             self.guess_right()
         else:
             self.wrong()
-        pass
+        
     def guess_right(self):
         """Updates self.index with the word's indices where the user's chosen letter
             is in.
@@ -61,7 +61,7 @@ class Player:
                 indices.append(i)
         self.indices= indices
         print(self.indices)
-        pass
+        
     def wrong(self):
         """Adds 1 to the self.guess_wrog counter
 
@@ -69,7 +69,7 @@ class Player:
             self (Player): an instance of Player.
         """
         self.guess_wrong+=1
-        pass
+    
 
 
 #This last line was just to test the class. Erase when the program is finished
