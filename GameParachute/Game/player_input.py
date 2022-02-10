@@ -21,8 +21,9 @@ class Player:
         self._user_guess=' '
         self.indices=[]
         self.guess_wrong=0
-        pass
-
+        self.word=Words().word_picker()
+        
+    
     def get_input(self):
         """Gets user's input (a letter).
 
@@ -62,8 +63,8 @@ class Player:
             if word[i] == guess:
                 indices.append(i)
         self.indices= indices
-        pass
-
+        print(self.indices)
+        
     def wrong(self):
         """Adds 1 to the self.guess_wrog counter
 
@@ -71,5 +72,5 @@ class Player:
             self (Player): an instance of Player.
         """
         self.guess_wrong+=1
-        pass
+    
 
