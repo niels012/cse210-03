@@ -1,13 +1,11 @@
 class Parachute:
 
-    # Setting the initial value
-
     def __init__(self):
+        """Setting the initial value"""
         self._parachute = ["  ___ \n /___\ \n \   / \n  \ / \n   0 \n  /|\ \n  / \ \n \n^^^^^^^"]
-    
-    # Updating the parachute output according to the answers
 
     def update_parachute (self):
+        """Updating the parachute output according to the answers"""
         if self.guess_wrong == 0:
             self._parachute = ["  ___ \n /___\ \n \   / \n  \ / \n   0 \n  /|\ \n  / \ \n \n^^^^^^^"]
         elif self.guess_wrong == 1:
@@ -18,11 +16,11 @@ class Parachute:
             self._parachute = ["  \ / \n   0 \n  /|\ \n  / \ \n \n^^^^^^^"]
         else:
             self._parachute = ["   x \n  /|\ \n  / \ \n \n^^^^^^^"]
-
-    # Displaying the updated parachute
         
     def display_parachute (self):
+        """ Displaying the updated parachute"""
         print(self._parachute)
+        
 
 ### Note! ###
 
