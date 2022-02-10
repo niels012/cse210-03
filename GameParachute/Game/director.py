@@ -16,22 +16,40 @@ class Director:
         Director (self) An instance of director"""
         self._parachute = Parachute()
         self._is_playing=True
-        self.player_input = player_input()
+        self.player_input = Player()
         self.words = Words()
-        pass
+       
 
     def start_game (self):
-        """Add comments"""
+        """Starts the game by running the main game loop.
+        
+        Args:
+            self (Director): an instance of Director.
+        """
         while self._is_playing:
             self._get_inputs()
             self._do_updates()
             self._do_outputs()
-        pass
+       
     
     def _get_inputs(self):
-        pass
+        """ gets player input for the parachute"""
+        guess = self._game.update_parachute ("\nGuess the letter: ")
+        self._parachute.display_parachute (guess)
+        
 
     def _do_updates (self):
-        pass
+        """Keeps track of the parachute
+
+        Args:
+            self (Director): An instance of Director.
+        """
+        self._Player.compare_guess(self._parachute)
+        
     def _do_outputs (self):
-        pass
+         """Provides a hint for the player to use.
+
+        Args:
+            self (Director): An instance of Director.
+        """
+        
