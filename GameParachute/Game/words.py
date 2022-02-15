@@ -1,60 +1,37 @@
 import random
 
 class Words:
+    """
+    The word provided by the game.
+
+    The responsability of Words is to pick a random word from a list and use it for the game.
+
+    Attributes:
+        word: The game's word.
+        
+    """
+
     def __init__(self):
-        # self.is_playing = True
+        """Constructs a new Words
+        
+        Args:
+            self (Words): an instance of Player.
+        """
         self.word = ""
-        self.num_letter = 0
-        # self.guess_letter = ""
-        # self.guess_wrong = 0
-        # self.score = 0
-    # def start(self):
-    #     self.word_picker()
-    #     while self.is_playing == True:
-    #         self.output()
-    #         self.compare_guess()
+
+
     def word_picker(self):
+        """
+        Takes a random word from a list of words.
+        
+        Args:
+            self (Words): an instance of Words.
+        """
         words_list = ["ox","cat","deer","mouse","rabbit","carabao","kangaroo"]
         # words_list =["door","deer","drag","born","bark","crab","roll","mock","spray"]
         pos_num = random.randint(0,len(words_list)-1)
         picked_word = words_list[pos_num]
-        self.word = picked_word 
-        num_letter = len(self.word)
-        self.num_letter = num_letter
+        self.word = picked_word
         return self.word
-    def prn(self):
-        print(self.word)
-    # def output(self):
-    #     if self.score == 0:
-    #         for i in range(self.num_letter):
-    #             print("_" ,end=" ")
-    #         print()
-    #     else:
-    #         for j in range(self.score):
-    #             print(self.word[j], end=" ")
-    #         for blank in range(self.num_letter - self.score):
-    #             print("_", end=" ")
-    #         print()
 
-    # def get_input(self):
-    #     letter = input("Guess the letter: ")
-    #     self.guess_letter = letter
-    # def compare_guess(self):
-    #         self.get_input()
-    #         if self.guess_letter == self.word[self.score]:
-    #             self.score += 1
-    #             if self.score == self.num_letter:
-    #                 self.output()
-    #                 self.is_playing = False
-    #                 print("You Win !!")
-    #         else:
-    #             self.guess_wrong += 1
-    #             if self.guess_wrong == 4:
-    #                 print("Game Over !!")
-    #                 self.is_playing = False
-    #             else:
-    #                 print(f"You have {self.guess_wrong} mistake")
-    #                 pass
 
-# words = Words()
-# words.word_picker()
