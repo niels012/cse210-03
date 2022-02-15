@@ -21,7 +21,6 @@ class Player:
         self._user_guess=' '
         self.indices=[]
         self.guess_wrong=0
-        self.word=Words().word_picker()
         
     
     def get_input(self):
