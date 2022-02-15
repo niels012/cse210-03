@@ -31,4 +31,12 @@ root                    (project root folder)
 
 ## Authors
 ---
-* Michelle Farr (mrecancun@hotmail.com), Bryce Hiroshi Williams, Nilo Urmeneta(urmenetanilo@gmail.com), Peter Otim, Agustin Aguilar.
+* Michelle Farr (mrecancun@hotmail.com), Bryce Hiroshi Williams, Nilo Urmeneta(urmenetanilo@gmail.com), Peter Otim, Agustin Aguilar (aguilarag98@gmail.com).
+
+## Contributions
+Michelle Farr: director.py
+Bryce Hiroshi Williams: construct_para.py
+Nilo Urameta: words.py
+Agustin Aguilar: player_input.py
+
+Everyone contributed with comments and ideas to each other's files.
