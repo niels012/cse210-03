@@ -29,8 +29,8 @@ class Words:
         """
         words_list = ["ox","cat","deer","mouse","rabbit","carabao","kangaroo"]
         # words_list =["door","deer","drag","born","bark","crab","roll","mock","spray"]
-        pos_num = random.randint(0,len(words_list)-1)
-        picked_word = words_list[pos_num]
+        pos_number = random.randint(0,len(words_list)-1)
+        picked_word = words_list[pos_number]
         self.word = picked_word
         return self.word
 
